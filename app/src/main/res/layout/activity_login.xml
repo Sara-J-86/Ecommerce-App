@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/beige"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to LEVANA"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#946434"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/registerRedirectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New user? Register here"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/teal"/>
+</LinearLayout>

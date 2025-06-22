@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_app_logo"
+            android:contentDescription="App Logo" />
+
+
+        <Button
+            android:id="@+id/btnBackToCatalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal"
+            android:text="Back to Catalog"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:text="Logout"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/cherryred" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:text="My Cart"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: ₹0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:gravity="center_horizontal" />
+
+
+    <EditText
+        android:id="@+id/etCoupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Coupon Code (e.g. SAVE10)"
+        android:inputType="text"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btnApplyCoupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply Coupon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="@color/teal" />
+
+    <Button
+        android:id="@+id/btncheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#100101" />
+</LinearLayout>

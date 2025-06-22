@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/beige"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Short product description"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="4dp"
+        android:textColor="#666"/>
+
+    <ImageButton
+        android:id="@+id/wishlistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wishlist_unselected"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:backgroundTint="@color/teal"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp" />
+
+    <!-- Delete from Cart Button -->
+    <Button
+        android:id="@+id/deleteFromCartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete from Cart"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp" />
+</LinearLayout>
