@@ -37,6 +37,6 @@ Make sure the following are configured in your Firebase Console:
 - Placed your google-services.json in the /app directory of the project
 
 ## Contributors
-- Ira Malik - Product Catalog, Firestore Integration, Wishlist, Real-Time Search Filtering, Product Details
 - Sara Joshi - Add/ Delete from Cart, Discount Coupon Integration, Checkout Flow, Payment & Order Confirmation screens
+- Ira Malik - Product Catalog, Firestore Integration, Wishlist, Real-Time Search Filtering, Product Details
 - Nishita Jain - Home & Login Page Design, Firebase Setup & Authentication, Google Sign-In Integration
